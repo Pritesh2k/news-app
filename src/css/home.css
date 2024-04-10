@@ -1,0 +1,11 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    width: 95vw;
+    height: 100%;
+    padding-top: 10px; /* Optional: add padding to the top if needed */
+  }
+  
+  /* Add your CardNews component styles here if necessary */
+  

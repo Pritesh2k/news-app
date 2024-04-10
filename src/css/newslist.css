@@ -1,0 +1,111 @@
+.grid-container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+    gap: 1rem; /* Gap between grid items */
+    padding: 20px; /* Padding around the grid */
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 50vh;
+  }
+
+  .grid-item:hover{
+    border: 1px solid rgba(0, 61, 175, 0.918);;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  .article-img{
+    width: 100%;
+    height: 50%;
+    
+    object-fit: cover;
+  }
+
+  .grid-item .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transform: translateY(1rem);
+    width: 20vw;
+    height: 10vh;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    color: white;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgba(0, 61, 175, 0.918);
+  }
+
+  .read-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 0vw;
+    height: 10vh;
+    opacity: 0;
+
+    position: relative;
+    margin-top: -10rem;
+
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-color: rgb(255, 174, 0);
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  .grid-item:hover .read-more{
+    width: 15vw;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .grid-item:hover .article-img{
+    filter: brightness(0.75);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .grid-item .description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    height: 25%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.9rem;
+    margin-top: 4rem;
+
+    text-align: center;
+  }
+
+  .additional-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
+    height: 5%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
