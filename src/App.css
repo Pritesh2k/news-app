@@ -35,8 +35,8 @@
   justify-content: center;
   align-items: center;
 
-  width: 30%;
-  height: 100%;
+  width: 100%;
+  height: 90%;
 
   font-size: 3rem;
   font-weight: 300;
@@ -68,6 +68,14 @@
 
   width: 100%;
   height: 40%;
+}
+
+.active {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  color: white;
+  background-color: rgb(0, 61, 175);
 }
 
 .news-category ul{
@@ -133,7 +141,7 @@
   align-items: center;
   flex-direction: column;
 
-  width: 95vw;
+  width: 100vw;
   height: 80vh;
 }
 
