@@ -5,8 +5,18 @@
     grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
     gap: 1rem; /* Gap between grid items */
     padding: 20px; /* Padding around the grid */
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: auto; /* Enable scrolling */
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: rgb(255, 174, 0) transparent; /* Scrollbar color */
+  }
+  
+  .grid-container::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+  
+  .grid-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5); /* Scrollbar thumb color */
+    border-radius: 4px; /* Rounded corners */
   }
   
   .grid-item {
